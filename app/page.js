@@ -34,8 +34,8 @@ export default function Home() {
       <button onClick={handleSave}>Save</button>
 
       <ul>
-        {notes.map((n, index) => (
-          <li key={index}>{n}</li>
+        {notes.map((n) => (
+          <li key={n.id}>{n.text}</li>
         ))}
       </ul>
     </div>
